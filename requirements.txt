@@ -1,0 +1,4 @@
+python-vlc
+youtube_dl
+mutagen
+pillow

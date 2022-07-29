@@ -33,8 +33,8 @@ next_button = ImageTk.PhotoImage(next_button)
 previous_button = ImageTk.PhotoImage(previous_button)
 
 myFont = ("Helvetica", 20, "bold")
-music_folder = r"D:/Conduit/Songs/"
-thumbnail_folder = r"D:/Conduit/Album Art/"
+music_folder = "Songs/"
+thumbnail_folder = "Album Art/"
 if not os.path.exists(music_folder):
     os.makedirs(music_folder)
 if not os.path.exists(thumbnail_folder):
@@ -162,7 +162,7 @@ def song_win():
             thumbnail_name = r"D:/Conduit/Album Art/" + name + artist + ".png"
             album_art = Image.open(thumbnail_name)
         except:
-            album_art = Image.open("NoCover.png")
+            album_art = Image.open("Images/NoCover.png")
 
         album_art = ImageTk.PhotoImage(album_art)
         immortals[name] = album_art
