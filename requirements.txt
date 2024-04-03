@@ -1,0 +1,5 @@
+python-vlc
+yt_dlp
+youtube_dl
+youtube-search-python
+mutagen
